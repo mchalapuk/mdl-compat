@@ -1,0 +1,21 @@
+{
+  "name": "mdl-compat",
+  "version": "0.0.1",
+  "authors": [
+    "Maciej Chałapuk <maciej@chalapuk.pl>"
+  ],
+  "main": "src/_mdl-compat.scss",
+  "license": "Apache License 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "js-polyfills": "polyfills#~0.1.11",
+    "material-design-lite": "~1.0.2",
+    "media-match": "~2.0.2",
+  }
+}
