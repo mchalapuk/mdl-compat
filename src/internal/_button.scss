@@ -1,0 +1,11 @@
+.mdl-js {
+  .mdl-button--icon {
+    // Percentage values of border-radius does not work in old Safari.
+    @include border-radius(500px);
+
+    .material-icons {
+      @include transform(translate(-12px, -12px));
+    }
+  }
+}
+

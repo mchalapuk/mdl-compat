@@ -1,0 +1,36 @@
+// On really old browsers grid is implemented
+// using JavaScript (see mdl-compat.js) and inline-block elements.
+// Cell widths are still set in standard mdl stylesheets.
+// We just want to setup proper wrapping in here.
+
+.mdl-js {
+  .mdl-grid.mdl-compat {
+    display: block;
+
+    // Setting font-size to 0px to remove white spaces
+    // between cells which are displayed as inline-block.
+    font-size: 0px;
+
+    // Setting white-space to normal (just in case)
+    // so that cells will nicely wrap to next.
+    white-space: normal;
+
+    .mdl-cell {
+      display: inline-block;
+
+      // Setting font-size back to some reasonable value,
+      // but it should probably be set on text elements explicitly.
+      font-size: 100%;
+
+      // Height property will be set from JavaScript.
+      vertical-align: top;
+    }
+
+    .mdl-cell--top, .mdl-cell--middle, .mdl-cell--bottom {
+      // Top property will be set from JavaScript
+      // instead of height property.
+      position: relative;
+    }
+  }
+}
+

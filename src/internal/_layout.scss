@@ -1,0 +1,34 @@
+// just some prefixed css
+
+.mdl-js {
+  .mdl-layout {
+    @include display-flex;
+    @include flex-direction-column;
+  }
+
+  .mdl-layout__header {
+    @include display-flex;
+    @include flex-direction-column;
+    @include flex-shrink(0);
+  }
+
+  .mdl-layout__header-row {
+    @include display-flex;
+    @include flex-direction-row;
+    @include flex-align-content(stretch);
+    @include flex-align-items(stretch);
+  }
+
+  .mdl-layout-spacer {
+    @include flex-grow(1);
+  }
+
+  .mdl-layout__content {
+    @include flex(0, 1, auto);
+    @include flex-grow(0);
+
+    padding: 0;
+    width: 100%;
+  }
+}
+

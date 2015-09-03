@@ -1,0 +1,11 @@
+// prefixed css
+
+.mdl-js {
+  .mdl-navigation {
+    @include display-flex;
+    @include flex-direction-row;
+    @include flex-align-content(start);
+    @include flex-align-items(center);
+  }
+}
+

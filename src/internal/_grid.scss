@@ -1,0 +1,19 @@
+// just some prefixed styles
+
+.mdl-js {
+  .mdl-grid {
+    @include display-flex;
+    @include flex-direction-row;
+    @include flex-wrap(wrap);
+    @include flex-align-items(stretch);
+  }
+
+  .mdl-cell {
+    @include box-sizing(border-box);
+  }
+  
+  .mdl-cell--middle {
+    @include flex-align-self(center);
+  }
+}
+
