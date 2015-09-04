@@ -21,9 +21,8 @@
       opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s
     );
   }
-}
 
-.mdl-menu__container.is-visible .mdl-menu__outline {
+  .mdl-menu__container.is-visible .mdl-menu__outline {
     @include transform(scale(1));
   }
 }

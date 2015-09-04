@@ -1,0 +1,20 @@
+{
+  "name": "mdl-compat",
+  "version": "0.0.1",
+  "description": "Material Design Lite browser compatibility extention",
+  "main": "dist/_mdl-compat.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdl-e/mdl-compat"
+  },
+  "author": "Maciej Chałapuk",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.4",
+  },
+  "dependencies": {}
+}
