@@ -5,7 +5,7 @@ module.exports = {
 
   css: {
     src: [
-      './src/mdl-compat.scss'
+      './src/internal/mdl-compat.scss'
     ]
   },
 
