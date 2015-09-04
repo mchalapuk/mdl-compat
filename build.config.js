@@ -8,5 +8,18 @@ module.exports = {
       './src/mdl-compat.scss'
     ]
   },
+
+  js: {
+    src: [
+      './lib/mdl-compat.js'
+    ]
+  },
+
+  jshint: {
+    globals: {
+      'window': {},
+      'document': {},
+    },
+  },
 };
 
