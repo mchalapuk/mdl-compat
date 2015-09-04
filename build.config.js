@@ -11,7 +11,7 @@ module.exports = {
 
   js: {
     src: [
-      './lib/mdl-compat.js'
+      './src/mdl-compat.js'
     ]
   },
 
