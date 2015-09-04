@@ -30,17 +30,11 @@ gulp.task('javascript', function() {
   ;
 });
 
-gulp.task('copy-polyfills', function() {
-  return bower()
-    .pipe(gulp.dest('lib/'))
-  ;
-});
-
 gulp.task('watch', function() {
   gulp.watch(config.css.src, ['sass']);
   gulp.watch([ config.js.src, '.jshintrc', 'build.config.js' ], ['javascript']);
 });
 
-gulp.task('build', ['sass', 'javascript', 'copy-polyfills']);
+gulp.task('build', ['sass', 'javascript']);
 gulp.task('default', ['build', 'watch']);
 
