@@ -14,6 +14,9 @@
    limitations under the License.
 */
 
+// requires Function.prototype.bind
+// requires Window.prototype.getComputedStyle
+
 (function() {
   'use strict';
 
@@ -44,10 +47,12 @@
     var rows = groupByRow(cells);
     var heights = rows.map(getHeightFromRow);
 
+    // if grid has fixed height, we want to fill it whole
     if (hasFixedHeight(grid)) {
       var allRowsHeight = heights.reduce(add, 0);
       heights = heights.map(function(h) {return h/allRowsHeight * grid.offsetHeight; });
     }
+
     rows.forEach(function(row, i) {
       setCellsHeightAndPosition(row, heights[i]);
     });
@@ -96,6 +101,7 @@
       } else if (cl.contains('mdl-cell--bottom')) {
         cell.style.top = (height - cell.offsetHeight) +'px';
       } else {
+        // if not top/middle/bottom, cell should fill whole height of the row
         cell.style.height = (height +'px');
       }
     });
@@ -104,6 +110,8 @@
   function hasFixedHeight(elem) {
     return window.getComputedStyle(elem, null).getPropertyValue('height');
   }
+
+  // helper functions
 
   function arrayify(nl) {
     var arr = new Array(nl.length);
