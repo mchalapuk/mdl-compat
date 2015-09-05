@@ -1,4 +1,4 @@
-# Make Material Design Lite work on iPhone and iPad.
+# Make Material Design Lite work on iPhone and iPad
 
 [MDL](http://www.getmdl.io) is a fine alternative for [Twitter Bootstrap](http://getbootstrap.com/).
 Unfortunately, it is compatible only with browsers that implement [HTML 5](
@@ -14,9 +14,9 @@ Package contains:
 
 ## Getting the code
 
-[git](https://git-scm.com/): `git clone https://github.com/mdl-e/mdl-compat.git`
-[bower](http://bower.io/): `bower install mdl-compat`
-[npm](https://www.npmjs.com/): not published yet
+ * [git](https://git-scm.com/): `git clone https://github.com/mdl-e/mdl-compat.git`
+ * [bower](http://bower.io/): `bower install mdl-compat`
+ * [npm](https://www.npmjs.com/): not published yet
 
 ## Usage
 
@@ -41,6 +41,10 @@ If you use MDL grid you need to add JavaScript polyfill, which will be enabled o
 does not implement 'flex-wrap' property (or any of it's prefixed versions).
 
 ```html
+  <script src="bower_components/js-polyfills/polyfill.js" type="text/javascript"></script>
+  <script src="bower_components/js-polyfills/dom.js" type="text/javascript"></script>
+  <script src="bower_components/media-match/media.match.js" type="text/javascript"></script>
+  <!-- mdl-compat.js must be loaded after JS and DOM polyfills -->
   <script src="bower_components/mdl-compat/dist/mdl-compat.min.js" type="text/javascript"></script>
 ```
 
