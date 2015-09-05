@@ -1,6 +1,6 @@
 {
   "name": "mdl-compat",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Material Design Lite browser compatibility extention",
   "main": "dist/_mdl-compat.scss",
   "scripts": {
