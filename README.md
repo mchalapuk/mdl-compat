@@ -25,24 +25,24 @@ Package contains:
 To add cross-browser styles for MDL components, just import mdl-compat to your main
 [Sass](http://sass-lang.com/) file.
 
-{{{sass
+{{sass
   @import 'bower\_components/mdl-compat/src/\_mdl-compat.scss';
-}}}
+}}
 
 ...or link compiled CSS into your HTML.
 
-{{{html
+{{html
   <link href="bower_components/mdl-compat/dist/mdl-compat.min.css" rel="stylesheet">
-}}}
+}}
 
 ### MDL Grid
 
 If you use MDL grid you need to add JavaScript polyfill, which will be enabled on all browsers that
 does not implement 'flex-wrap' property (or any of it's prefixed versions).
 
-{{{html
+{{html
   <script src="bower_components/mdl-compat/dist/mdl-compat.min.js" type="text/javascript"></script>
-}}}
+}}
 
 ## Contributing
 
