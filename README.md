@@ -1,10 +1,10 @@
 # Make Material Design Lite work on iPhone and iPad
 
 [MDL](http://www.getmdl.io) is a fine alternative for [Twitter Bootstrap](http://getbootstrap.com/).
-Unfortunately, it is compatible only with browsers that implement [HTML 5](
-http://www.w3.org/html/wg/drafts/html/master/), which makes it ususable for most commercial
-projects. This project aims to make MDL compatible with older browsers, espacially with browsers
-with browsers on iPhones and iPads.
+Unfortunately, it is compatible only with browsers that implement [HTML5](
+http://www.w3.org/html/wg/drafts/html/master/), which makes it ususable in most commercial
+projects. This package aims to make MDL compatible with older browsers, espacially with Safari
+on iPhone and iPad.
 
 Package contains:
 
@@ -45,7 +45,7 @@ To add cross-browser styles for MDL components, just import mdl-compat to your m
 
 ### MDL Grid
 
-If you use MDL grid you need to add JavaScript polyfill, which will be enabled on all browsers that
+If you use MDL grid, you need to add JavaScript polyfill, which will be enabled on all browsers that
 does not implement `flex-wrap` property (or any of it's prefixed versions).
 
 ```html
