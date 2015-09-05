@@ -2,7 +2,7 @@
   "name": "mdl-compat",
   "version": "0.1.1",
   "description": "Material Design Lite browser compatibility extention",
-  "main": "dist/_mdl-compat.scss",
+  "main": "src/_mdl-compat.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
