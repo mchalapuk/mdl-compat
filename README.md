@@ -41,11 +41,15 @@ If you use MDL grid you need to add JavaScript polyfill, which will be enabled o
 does not implement 'flex-wrap' property (or any of it's prefixed versions).
 
 ```html
-  <script src="bower_components/js-polyfills/polyfill.js" type="text/javascript"></script>
-  <script src="bower_components/js-polyfills/dom.js" type="text/javascript"></script>
-  <script src="bower_components/media-match/media.match.js" type="text/javascript"></script>
+  <script src="bower_components/js-polyfills/polyfill.js"
+      type="text/javascript"></script>
+  <script src="bower_components/js-polyfills/dom.js"
+      type="text/javascript"></script>
+  <script src="bower_components/media-match/media.match.js"
+      type="text/javascript"></script>
   <!-- mdl-compat.js must be loaded after JS and DOM polyfills -->
-  <script src="bower_components/mdl-compat/dist/mdl-compat.min.js" type="text/javascript"></script>
+  <script src="bower_components/mdl-compat/dist/mdl-compat.min.js"
+      type="text/javascript"></script>
 ```
 
 ## Contributing
