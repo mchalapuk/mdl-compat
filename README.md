@@ -21,7 +21,7 @@ bower install mdl-compat --save-dev
 
 You can also clone it with [git](https://git-scm.com/).
 ```
-git clone https://github.com/mdl-e/mdl-compat.git`
+git clone https://github.com/md-extensions/mdl-compat.git`
 ```
 
 Package is not published in [npm](https://www.npmjs.com/).
