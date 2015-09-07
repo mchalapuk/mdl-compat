@@ -1,4 +1,4 @@
-# Make Material Design Lite work on iPhone and iPad
+# Make MDL work on iPhone and iPad
 
 [MDL](http://www.getmdl.io) is a fine alternative for [Twitter Bootstrap](http://getbootstrap.com/).
 Unfortunately, it is compatible only with browsers that implement [HTML5](
