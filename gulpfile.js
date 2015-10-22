@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
+var browserify = require('gulp-browserify');
 var rename = require('gulp-rename');
 var stripComments = require('gulp-strip-comments');
 
@@ -20,21 +21,28 @@ gulp.task('sass', function () {
   ;
 });
 
-gulp.task('javascript', function() {
+gulp.task('jshint', function() {
   return gulp.src(config.js.src)
     .pipe(jshint(config.jshint))
     .pipe(jshint.reporter('jshint-stylish'))
+  ;
+});
+
+gulp.task('javascript', [ 'jshint' ], function() {
+  return gulp.src(config.js.main)
+    .pipe(browserify())
+    .pipe(rename('mdl-compat.js'))
+    .pipe(gulp.dest(config.dir.build))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(config.dir.build))
   ;
 });
 
-gulp.task('watch', function() {
-  gulp.watch(config.css.src, ['sass']);
-  gulp.watch([ config.js.src, '.jshintrc', 'build.config.js' ], ['javascript']);
-});
+gulp.task('default', ['sass', 'javascript']);
 
-gulp.task('build', ['sass', 'javascript']);
-gulp.task('default', ['build', 'watch']);
+gulp.task('watch', ['default'], function() {
+  gulp.watch(config.css.src, ['sass']);
+  gulp.watch(config.js.src, ['javascript']);
+});
 

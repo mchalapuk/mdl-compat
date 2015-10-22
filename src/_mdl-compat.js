@@ -17,7 +17,7 @@
 // requires Function.prototype.bind
 // requires Window.prototype.getComputedStyle
 
-(function() {
+module.exports = function(window) {
   'use strict';
 
   if (!isFlexWrapSupported()) {
@@ -124,5 +124,5 @@
   function add(a, b) {
     return a + b;
   }
-}());
+};
 

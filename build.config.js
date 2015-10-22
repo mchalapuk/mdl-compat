@@ -1,17 +1,20 @@
 module.exports = {
   dir: {
-    build: './dist/',
+    build: 'dist/',
   },
 
   css: {
     src: [
-      './src/internal/mdl-compat.scss'
+      'src/internal/mdl-compat.scss',
     ]
   },
 
   js: {
     src: [
-      './src/mdl-compat.js'
+      'index.js', 'src/*.js',
+    ],
+    main: [
+      'src/browserify.js',
     ]
   },
 
