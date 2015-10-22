@@ -1,9 +1,11 @@
 # Make MDL work on iPhone and iPad
 
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+
 [MDL](http://www.getmdl.io) is a fine alternative for [Twitter Bootstrap](http://getbootstrap.com/).
-Unfortunately, it is compatible only with browsers that implement [HTML5](
-http://www.w3.org/html/wg/drafts/html/master/), which makes it ususable in most commercial
-projects. This package aims to make MDL compatible with older browsers, espacially with Safari
+It is compatible with browsers that implement [HTML5](http://www.w3.org/html/wg/drafts/html/master/
+). This package aims to make MDL compatible with older browsers, espacially with Safari
 on iPhone and iPad.
 
 Package contains:
@@ -15,16 +17,15 @@ Package contains:
 ## Getting the code
 
 Preferred way to get mdl-compat is to use [bower](http://bower.io/).
-```
-bower install mdl-compat --save-dev
-```
-
-You can also clone it with [git](https://git-scm.com/).
-```
-git clone https://github.com/md-extensions/mdl-compat.git`
+```shell
+bower install mdl-compat --save
 ```
 
-Package is not published in [npm](https://www.npmjs.com/).
+Or use [npm](https://www.npmjs.com/) (when using [browserify](
+https://github.com/substack/node-browserify)):
+```shell
+npm install mdl-compat --save
+```
 
 ## Usage
 
@@ -45,8 +46,8 @@ To add cross-browser styles for MDL components, just import mdl-compat to your m
 
 ### MDL Grid
 
-If you use MDL grid, you need to add JavaScript polyfill, which will be enabled on all browsers that
-does not implement `flex-wrap` property (or any of it's prefixed versions).
+On all browsers that do not implement `flex-wrap` property (or any of it's prefixed versions)
+a JavaScript polyfill is required for MDL grid to work properly.
 
 ```html
 <script src="bower_components/js-polyfills/polyfill.js"
@@ -60,9 +61,28 @@ does not implement `flex-wrap` property (or any of it's prefixed versions).
     type="text/javascript"></script>
 ```
 
+When using [browserify](https://github.com/substack/node-browserify) module exports
+a loader function that must be applied on a window object.
+
+```javascript
+var loadMdlCompat = require('mdl-compat');
+// TODO polyfills must be loaded first
+window.addEventlistener('load', loadMdlCompat.bind(null, window));
+```
+
 ## Contributing
 
 This project contains styles for components that I used un my projects so far. Further components
-will be covered as I will need them. Flexbox-related mixins can be found in
-`src/internal/_mixins.scss`. Pull requests are very welcome!
+will be covered when needed. Flexbox-related mixins can be found in `src/internal/_mixins.scss`.
+Pull requests are very welcome!
+
+## License
+
+[Apache License 2.0](LICENSE)
+
+[npm-url]: https://npmjs.org/package/mdl-compat
+[npm-image]: https://badge.fury.io/js/mdl-compat
+
+[travis-url]: http://travis-ci.org/webfront-toolkit/mdl-compat
+[travis-image]: https://secure.travis-ci.org/webfront-toolkit/mdl-compat.png?branch=master
 

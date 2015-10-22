@@ -132,7 +132,7 @@ module.exports = function(window) {
 'use strict';
 
 var loadMdlCompat = require('./_mdl-compat.js');
-loadMdlCompat(window);
+window.addEventListener('load', loadMdlCompat.bind(null, window));
 
 
 },{"./_mdl-compat.js":1}]},{},[2])
