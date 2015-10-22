@@ -4,17 +4,17 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
-var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
-var bower = require('gulp-bower');
+var stripComments = require('gulp-strip-comments');
 
 var config = require('./build.config');
 
 gulp.task('sass', function () {
   return gulp.src(config.css.src)
     .pipe(sass.sync().on('error', sass.logError))
+    .pipe(stripComments())
     .pipe(gulp.dest(config.dir.build))
-    .pipe(cssmin())
+    .pipe(sass.sync({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(config.dir.build))
   ;
