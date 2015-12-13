@@ -1,6 +1,7 @@
 {
   "name": "mdl-compat",
-  "version": "0.1.2",
+  "description": "Makes Material Design Lite work on iPhone, IPad and old IE",
+  "version": "0.1.3",
   "authors": [
     "Maciej Chałapuk <maciej@chalapuk.pl>"
   ],

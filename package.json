@@ -1,14 +1,14 @@
 {
   "name": "mdl-compat",
-  "version": "0.1.2",
-  "description": "Material Design Lite browser compatibility extention",
+  "version": "0.1.3",
+  "description": "Makes Material Design Lite work on iPhone, iPad and old IE",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/md-extensions/mdl-compat"
+    "url": "https://github.com/webfront-toolkit/mdl-compat"
   },
   "author": "Maciej Chałapuk",
   "license": "Apache License 2.0",
