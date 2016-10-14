@@ -1,4 +1,21 @@
-# Make MDL work on iPhone and iPad [![Build Status][travis-image]][travis-url]
+[travis-url]: http://travis-ci.org/webfront-toolkit/mdl-compat
+[travis-image]: https://secure.travis-ci.org/webfront-toolkit/mdl-compat.png?branch=master
+
+[david-url]: https://david-dm.org/webfront-toolkit/mdl-compat
+[david-image]: https://david-dm.org/webfront-toolkit/mdl-compat.svg
+
+[david-url-dev]: https://david-dm.org/webfront-toolkit/mdl-compat?type=dev
+[david-image-dev]: https://david-dm.org/webfront-toolkit/mdl-compat/dev-status.svg
+
+[npm-url]: https://npmjs.org/package/mdl-compat
+[npm-image]: https://badge.fury.io/js/mdl-compat.svg
+
+# Make MDL work on iPhone and iPad
+
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][david-image]][david-url]
+[![devDependency Status][david-image-dev]][david-url-dev]
+[![NPM version][npm-image]][npm-url]
 
 [MDL](http://www.getmdl.io) is a fine alternative for [Twitter Bootstrap](http://getbootstrap.com/).
 It is compatible with browsers that implement [HTML5](http://www.w3.org/html/wg/drafts/html/master/
@@ -76,7 +93,4 @@ Pull requests are very welcome!
 ## License
 
 [Apache License 2.0](LICENSE)
-
-[travis-url]: http://travis-ci.org/webfront-toolkit/mdl-compat
-[travis-image]: https://secure.travis-ci.org/webfront-toolkit/mdl-compat.png?branch=master
 
