@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var browserify = require('gulp-browserify');
 var rename = require('gulp-rename');
-var stripComments = require('gulp-strip-comments');
+var stripComments = require('gulp-strip-css-comments');
 
 var config = require('./build.config');
 

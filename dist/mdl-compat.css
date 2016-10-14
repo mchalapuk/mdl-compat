@@ -1,10 +1,17 @@
 @charset "UTF-8";
+
+
+
 .mdl-js .mdl-layout {
   display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  
+  display: -moz-box;
+  
+  display: -ms-flexbox;
+  
+  display: -webkit-flex;
+  
+  display: flex;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -13,10 +20,14 @@
 
 .mdl-js .mdl-layout__header {
   display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  
+  display: -moz-box;
+  
+  display: -ms-flexbox;
+  
+  display: -webkit-flex;
+  
+  display: flex;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -28,10 +39,14 @@
 
 .mdl-js .mdl-layout__header-row {
   display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  
+  display: -moz-box;
+  
+  display: -ms-flexbox;
+  
+  display: -webkit-flex;
+  
+  display: flex;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -webkit-flex-direction: row;
@@ -67,12 +82,17 @@
   padding: 0;
   width: 100%; }
 
+
 .mdl-js .mdl-navigation {
   display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  
+  display: -moz-box;
+  
+  display: -ms-flexbox;
+  
+  display: -webkit-flex;
+  
+  display: flex;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -webkit-flex-direction: row;
@@ -86,6 +106,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+
 
 .mdl-js .mdl-menu__outline {
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -116,6 +137,7 @@
   -o-transform: scale(1);
   transform: scale(1); }
 
+
 .mdl-js .mdl-button--icon {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -127,12 +149,17 @@
     -o-transform: translate(-12px, -12px);
     transform: translate(-12px, -12px); }
 
+
 .mdl-js .mdl-grid {
   display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  
+  display: -moz-box;
+  
+  display: -ms-flexbox;
+  
+  display: -webkit-flex;
+  
+  display: flex;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -webkit-flex-direction: row;
@@ -156,6 +183,7 @@
   -webkit-align-self: center;
   -moz-align-self: center;
   align-self: center; }
+
 
 .mdl-js .mdl-grid.mdl-compat {
   display: block;
