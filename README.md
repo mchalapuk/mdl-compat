@@ -1,7 +1,4 @@
-# Make MDL work on iPhone and iPad
-
-[![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+# Make MDL work on iPhone and iPad [![Build Status][travis-image]][travis-url]
 
 [MDL](http://www.getmdl.io) is a fine alternative for [Twitter Bootstrap](http://getbootstrap.com/).
 It is compatible with browsers that implement [HTML5](http://www.w3.org/html/wg/drafts/html/master/
@@ -79,9 +76,6 @@ Pull requests are very welcome!
 ## License
 
 [Apache License 2.0](LICENSE)
-
-[npm-url]: https://npmjs.org/package/mdl-compat
-[npm-image]: https://badge.fury.io/js/mdl-compat
 
 [travis-url]: http://travis-ci.org/webfront-toolkit/mdl-compat
 [travis-image]: https://secure.travis-ci.org/webfront-toolkit/mdl-compat.png?branch=master
