@@ -17,10 +17,14 @@
 [![devDependency Status][david-image-dev]][david-url-dev]
 [![NPM version][npm-image]][npm-url]
 
-[MDL](http://www.getmdl.io) is a fine alternative for [Twitter Bootstrap](http://getbootstrap.com/).
-It is compatible with browsers that implement [HTML5](http://www.w3.org/html/wg/drafts/html/master/
-). This package aims to make MDL compatible with older browsers, espacially with Safari
-on iPhone and iPad.
+[MDL][mdl] is a fine alternative to [Twitter Bootstrap][bootstrap].
+It is compatible with browsers that (at least partially) implement [HTML5][html5].
+This package is aimed at making MDL compatible with older browsers, espacially with Safari
+on older iPhones and iPads.
+
+[mdl]: http://www.getmdl.io
+[bootstrap]: http://getbootstrap.com/
+[html5]: http://www.w3.org/html/wg/drafts/html/master/
 
 Package contains:
 
