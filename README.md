@@ -1,11 +1,11 @@
-[travis-url]: http://travis-ci.org/webfront-toolkit/mdl-compat
-[travis-image]: https://secure.travis-ci.org/webfront-toolkit/mdl-compat.png?branch=master
+[travis-url]: http://travis-ci.org/muroc/mdl-compat
+[travis-image]: https://secure.travis-ci.org/muroc/mdl-compat.png?branch=master
 
-[david-url]: https://david-dm.org/webfront-toolkit/mdl-compat
-[david-image]: https://david-dm.org/webfront-toolkit/mdl-compat.svg
+[david-url]: https://david-dm.org/muroc/mdl-compat
+[david-image]: https://david-dm.org/muroc/mdl-compat.svg
 
-[david-url-dev]: https://david-dm.org/webfront-toolkit/mdl-compat?type=dev
-[david-image-dev]: https://david-dm.org/webfront-toolkit/mdl-compat/dev-status.svg
+[david-url-dev]: https://david-dm.org/muroc/mdl-compat?type=dev
+[david-image-dev]: https://david-dm.org/muroc/mdl-compat/dev-status.svg
 
 [npm-url]: https://npmjs.org/package/mdl-compat
 [npm-image]: https://badge.fury.io/js/mdl-compat.svg
